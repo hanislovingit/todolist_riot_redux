@@ -1,5 +1,11 @@
 {
   "jspm": {
+    "dependencies": {
+      "redux": "npm:redux@^3.5.2",
+      "riot": "npm:riot@^2.4.1",
+      "riot-redux-mixin": "npm:riot-redux-mixin@^1.0.0",
+      "tag": "npm:systemjs-riot@^1.2.6"
+    },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
