@@ -1,16 +1,20 @@
 <!doctype html>
 <html>
-    <head>
-        <title>ToDo List with Riot and Redux</title>
-        <script src="jspm_packages/system.js"></script>
-        <script src="config.js"></script>
-    </head>
-    <body>
-        <todo-app></todo-app>
-        
-        <script>
-            System.import('main.js')
-        </script>
-    </body>
+
+<head>
+    <title>ToDo List with Riot and Redux</title>
+    <style type="riot"></style>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+</head>
+
+<body>
+    <todo-app></todo-app>
+
+    <script>
+        System.trace = true;
+        System.import('main.js')
+    </script>
+</body>
+
 </html>
-    
