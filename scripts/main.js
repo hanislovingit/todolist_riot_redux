@@ -25,7 +25,7 @@ const todoApp = (state = [{
                if (todo.id === action.payload.id) {
                    return {
                        ...todo,
-                       completed: !action.payload.completed
+                       completed: !todo.completed
                    };
                } else {
                    return todo;

@@ -4,11 +4,11 @@
     <label for="todoInput">Add a To Do: 
         <input type="text" name="todoInput" placeholder="enter something..." />
     </label>
-    <button type="button" onclick="{add}">Add #{this.items.length + 1}</button>
+    <button type="button" onclick={add}>Add #{this.items.length + 1}</button>
 
     <ul>
         <li each={item, i in items} style="text-decoration: {item.completed ? 'line-through' : 'none'}" >
-            <input type="checkbox" checked={item.completed} onclick="{toggle}" key={item.id} />
+            <input type="checkbox" checked={item.completed} onclick={toggle} key={item.id} />
             {item.text}            
         </li>
     </ul>
@@ -21,7 +21,10 @@
         
         input[type=text] {
             width: 300px;
-            font-style: none;
+        }
+        
+        ul {
+            list-style: square;
         }
         
     </style>
